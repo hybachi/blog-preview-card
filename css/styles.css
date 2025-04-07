@@ -1,0 +1,90 @@
+:root {
+	--color-white: #fff;
+	--color-accent: #f4d04e;
+	--color-gray-950: #111111;
+	--color-gray-500: #6b6b6b;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 24px;
+	background-color: var(--color-accent);
+	font-size: clamp(1.4rem, 2vw, 1.6rem);
+	font-family: Figtree, Helvetica, sans-serif;
+	font-weight: 500;
+	line-height: 150%;
+	color: var(--color-gray-950);
+}
+
+.card {
+	box-shadow: 8px 8px 0px 0px #000;
+	max-width: clamp(327px, 40vw, 384px);
+	padding: 24px;
+	background-color: var(--color-white);
+	border-radius: 20px;
+}
+
+.card__image {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.card__badge,
+.card__date {
+	font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+.card__badge {
+	align-self: flex-start;
+	padding: 4px 12px;
+	background-color: var(--color-accent);
+	border-radius: 4px;
+	font-weight: 800;
+}
+
+.card__content {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 24px 0;
+}
+
+.card__heading {
+	margin: 0;
+	font-size: clamp(2rem, 2vw, 2.4rem);
+	font-weight: 800;
+}
+
+.card__description {
+	color: var(--color-gray-500);
+}
+
+.avatar {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.avatar__img {
+	width: 32px;
+	height: 32px;
+}
+
+.avatar__name {
+	font-size: 1.4rem;
+	font-weight: 800;
+}
